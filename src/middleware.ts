@@ -3,9 +3,8 @@ import { NextRequest, NextResponse } from 'next/server';
 export function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname;
   
-  // Bypass __next requests
   if (pathname.startsWith('/_next')) {
-    return NextResponse.rewrite(new URL(`/`, req.url));
+    return NextResponse.next();
   }
 
   const hostname = req.headers.get('host');
