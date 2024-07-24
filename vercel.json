@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "alias": "joogps.com",
+    "routes": [
+        {
+        "src": "/push/(.*)",
+        "dest": "/push/$1"
+        }
+    ]
+}
+  
