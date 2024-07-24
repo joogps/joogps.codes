@@ -4,7 +4,7 @@ import "../globals.css";
 import MeshGradient from "@/components/MeshGradient";
 import Link from "next/link";
 import Image from 'next/image';
-import PushLogo from "@/public/push_logo.png";
+import PushLogo from "../../../public/push_logo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
