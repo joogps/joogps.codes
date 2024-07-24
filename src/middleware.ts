@@ -5,7 +5,7 @@ export function middleware(req: NextRequest) {
   
   // Bypass __next requests
   if (pathname.startsWith('/_next')) {
-    return NextResponse.next();
+    return NextResponse.rewrite(new URL(`/`, req.url));
   }
 
   const hostname = req.headers.get('host');
