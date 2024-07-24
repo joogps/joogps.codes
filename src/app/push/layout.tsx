@@ -4,7 +4,8 @@ import "../globals.css";
 import MeshGradient from "@/components/MeshGradient";
 import Link from "next/link";
 import Image from 'next/image';
-import PushLogo from "../../../public/push_logo.png";
+
+import Logo from "../../../public/push/logo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,7 @@ export default function RootLayout({
 
       <div className="pt-8 w-full h-svh flex flex-col">
         <Link href="/push">
-        <Image src={PushLogo} className="mx-8" alt="apple" width={100} height={50} />
+        <Image src={Logo} className="mx-8" alt="apple" width={100} height={50} />
         </Link>
 
         <div className="justify-between h-full flex flex-col items-end">

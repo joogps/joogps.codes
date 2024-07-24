@@ -2,6 +2,10 @@ import Image from 'next/image';
 import CapsuleButton from "@/components/Button/CapsuleButton";
 import Link from "next/link";
 
+import Logo9to5Mac from "../../../public/push/9to5Mac_logo.png";
+import Mockup from "../../../public/push/mockup.png";
+import QRCode from "../../../public/push/qr-code.png";
+
 export default function PushPage() {
   return (
         <div className="flex md:flex-row flex-col md:h-full w-full md:space-y-0 justify-between items-center md:items-start">
@@ -20,20 +24,20 @@ export default function PushPage() {
             <div className="flex items-start flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
             <CapsuleButton style="capsule-button-secondary" href="https://apps.apple.com/app/apple-store/id1587610077?pt=122431166&ct=Website&mt=8">
                 <div className="flex flex-col items-center">
-                    <Image className="bg-white w-full hidden md:block" src="/qr_code.png" alt="qr code" width={100} height={100} />
+                    <Image className="bg-white w-full hidden md:block" src={QRCode} alt="QR code" width={100} height={100} />
                     <p className="py-2 px-5 text-nowrap"> get the app ↓ </p>
                 </div>
             </CapsuleButton>
             <Link href="">
             <div className="flex flex-col items-start space-y-2">
                 <h2 className="text-white text-opacity-50 font-bold"> FEATURED ON </h2>
-                <Image src="/9to5mac.png" alt="apple" width={200} height={100} />
+                <Image src={Logo9to5Mac} alt="apple" width={200} height={100} />
             </div>
             </Link>
             </div>
             </div>
             
-            <Image src="/Mock.png" alt="apple" className="md:fixed md:bottom-0 md:right-8 z-0 md:z-50 md:w-2/5" width={400} height={0} />
+            <Image src={Mockup} alt="apple" className="md:fixed md:bottom-0 md:right-8 z-0 md:z-50 md:w-2/5" width={400} height={0} />
         </div>
   );
 };
