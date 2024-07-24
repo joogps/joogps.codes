@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import Logo9to5Mac from "../../../public/push/9to5Mac_logo.png";
 import Mockup from "../../../public/push/mockup.png";
-import QRCode from "../../../public/push/qr-code.png";
+import QRCode from "../../../public/push/qr_code.png";
 
 export default function PushPage() {
   return (
