@@ -1,30 +1,26 @@
-"use client"
-
 import Image from "next/image";
 import Link from 'next/link'
-import RoundedLink from "@/components/RoundedLink";
+import CapsuleButton from "@/components/Button/CapsuleButton";
+import { Space_Grotesk } from "next/font/google";
 
-import { Gradient } from "whatamesh";
-import { useEffect } from "react";
+import MeshGradient from "@/components/MeshGradient";
+import Header from "@/components/Header";
+
+const space = Space_Grotesk({subsets: ["latin"], });
 
 export default function Home() {
-  useEffect(() => {
-    const gradient = new Gradient();
-    gradient.initGradient("#gradient-canvas");
-  }, [])
-
   return (
     <main>
-      <canvas id="gradient-canvas" data-transition-in />
+      <MeshGradient></MeshGradient>
 
-      <div className="p-12 md:p-24 z-10 h-96 w-full flex flex-col items-start justify-between text-sm lg:flex">
+      <div className="p-12 md:p-24 my-12 z-10 h-96 w-full flex flex-col items-start justify-between text-sm lg:flex">
         <h1 className="mb-3 text-4xl font-semibold text-white">
           my name is joão pozzobon <span className="text-white text-opacity-50">— i'm a software engineer and computer science student.</span>
         </h1>
 
         <div className="flex items-center space-x-10">
-        <Image src="/apple.svg" style={{ filter: 'invert(100%)' }} className="hover:scale-95" alt="apple" width={75} height={75} />
-        <Image src="/seal.svg" style={{ filter: 'brightness(0%) invert(100%)' }} className="hover:scale-95" alt="push" width={75} height={75} />
+        <Image src="/apple.svg" style={{ filter: 'invert(100%)' }} className="hover:scale-95" alt="apple" width={60} height={60} />
+        <Image src="/seal.svg" style={{ filter: 'brightness(0%) invert(100%)' }} className="hover:scale-95" alt="push" width={60} height={60} />
         </div>
       </div>
 
@@ -35,37 +31,39 @@ export default function Home() {
         <p className="text-xl font-medium ml-2"> your new favorite workout companion. </p>
 
         <div className="flex items-center space-x-2">
-        <RoundedLink href="">
+        <CapsuleButton style="capsule-button-primary" href="">
           learn more
-        </RoundedLink>
+        </CapsuleButton>
 
-        <RoundedLink href="">
-          download
-        </RoundedLink>
+        <CapsuleButton href="">
+          download ↓
+        </CapsuleButton>
         </div>
         </div>
 
         <Image src="/push mockup.png" alt="push" width={400} height={400} />
       </div>
 
-      <div className="w-full flex lg:flex-row flex-col lg:justify-between items-center bg-gradient-to-t to-purple-950 from-purple-900 rounded-2xl border border-neutral-100 border-opacity-10">
+      <div className={`w-full flex lg:flex-row flex-col lg:justify-between items-center bg-gradient-to-t to-purple-950 from-purple-900 rounded-2xl border border-white border-opacity-10 ${space.className}`}>
         <div className="flex flex-col items-start space-y-5 m-16">
-        <h1 className="text-6xl"> Magic </h1>
-        <p className="text-xl font-medium ml-2"> An amazing drawing app. An incredible interface. And an astonishing AI assistant. </p>
+        <h1 className="text-6xl font-extrabold" > Magic </h1>
+        <p className="text-xl font-medium"> An amazing drawing app. An incredible interface. And an astonishing AI assistant. </p>
 
-        <div className="flex flex-col items-start space-y-2">
-        <RoundedLink href="">
-          learn more
-        </RoundedLink>
+        <div className="flex items-start space-x-2">
+        <CapsuleButton style="capsule-button-primary" href="">
+          Learn more
+        </CapsuleButton>
 
-        <RoundedLink href="">
-          download
-        </RoundedLink>
+        <CapsuleButton href="">
+          Download ↓
+        </CapsuleButton>
         </div>
         </div>
 
       </div>
       </div>
+
+      <Header></Header>
     </main>
   );
 }

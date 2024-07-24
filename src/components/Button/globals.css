@@ -1,0 +1,13 @@
+.capsule-button-primary {
+    --capsule-button-background: rgba(255, 255, 255, 1);
+    --capsule-button-background-highlighted: rgba(255, 255, 255, 0.9);
+    --capsule-button-border: rgba(255, 255, 255, 0.1);
+    --capsule-button-text: rgba(0, 0, 0, 0.9);
+}
+
+.capsule-button-secondary {
+    --capsule-button-background: rgba(255, 255, 255, 0.05);
+    --capsule-button-background-highlighted: rgba(255, 255, 255, 0.1);
+    --capsule-button-border: rgba(255, 255, 255, 0.1);
+    --capsule-button-text: rgba(255, 255, 255, 1.0);
+}

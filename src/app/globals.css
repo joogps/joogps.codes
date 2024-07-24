@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+} */
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +20,10 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+::selection {
+  background: gray;
 }
 
 body {
@@ -41,7 +51,29 @@ body {
 }
 
 * {
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
+}
+
+.expanded-font {
+  font-family: system-ui, sans-serif;
+  font-variation-settings: "wght" 600, "wdth" 130;
+}
+
+.gradient-text {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feature-highlight {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  border-radius: 8px;
+  opacity: 0.9;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  animation: linear opacity 2s;
 }
 
 @layer utilities {
