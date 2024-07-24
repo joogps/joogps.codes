@@ -1,13 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async rewrites() {
-        return [
-          {
-            source: '/_next/:path*',
-            destination: 'https://joogps.com/_next/:path*'
-          }
-        ];
-      }
-};
+    reactStrictMode: true,
+    assetPrefix: process.env.NODE_ENV === 'production'
+        ? 'https://joogps.com'
+        : '',
+}
 
-export default nextConfig;
+export default nextConfig

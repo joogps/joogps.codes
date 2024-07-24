@@ -3,8 +3,8 @@ import { NextRequest, NextResponse } from 'next/server';
 export function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname;
   
-  if (pathname.startsWith('/_next')) {
-    return NextResponse.next();
+  if (pathname.includes('/_next/') || pathname.includes('/static/')) {
+    return NextResponse.next()
   }
 
   const hostname = req.headers.get('host');
@@ -16,4 +16,6 @@ export function middleware(req: NextRequest) {
     default:
       return NextResponse.next();
   }
+
+  return NextResponse.next()
 }
