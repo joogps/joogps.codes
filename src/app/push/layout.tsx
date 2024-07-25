@@ -4,7 +4,6 @@ import "../globals.css";
 import MeshGradient from "@/components/MeshGradient";
 import Link from "next/link";
 import Image from 'next/image';
-import { usePathname } from 'next/navigation'
 
 import Logo from "../../../public/push/logo.png";
 
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black",
     "theme-color": "#000000",
-    "og:image": usePathname()+Preview.src,
+    "og:image": "https://push.joogps.com"+Preview.src,
   }
 };
 
