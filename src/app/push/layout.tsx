@@ -37,11 +37,12 @@ export default function RootLayout({
 
       <div className="pt-8 w-full h-svh flex flex-col">
         <Link href="/push">
-        <Image src={Logo} className="mx-8" alt="apple" width={100} height={50} />
+        <Image src={Logo} className="mx-8" alt="apple" height={30} />
         </Link>
 
         <div className="justify-between h-full flex flex-col items-end">
             {children}
+
             <div className="w-full bg-neutral-950 px-12 min-h-[96px] flex flex-row items-center space-x-4 font-semibold">
                 <Link href="/push/privacy-policy"> privacy policy </Link>
                 <Link href="mailto:joogps@icloud.com"> contact us </Link>

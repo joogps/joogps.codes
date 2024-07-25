@@ -76,6 +76,13 @@ body {
   animation: linear opacity 2s;
 }
 
+h2 {
+  font-size: 1.2rem;
+  margin-top: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

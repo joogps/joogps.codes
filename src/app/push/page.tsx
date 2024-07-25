@@ -28,16 +28,16 @@ export default function PushPage() {
                     <p className="py-2 px-5 text-nowrap"> get the app ↓ </p>
                 </div>
             </CapsuleButton>
-            <Link href="">
+            <Link href="https://9to5mac.com/2024/06/07/count-push-ups-iphone-app/">
             <div className="flex flex-col items-start space-y-2">
                 <h2 className="text-white text-opacity-50 font-bold"> FEATURED ON </h2>
-                <Image src={Logo9to5Mac} alt="apple" width={200} height={100} />
+                <Image src={Logo9to5Mac} alt="apple" width={200} />
             </div>
             </Link>
             </div>
             </div>
             
-            <Image src={Mockup} alt="apple" className="md:fixed md:bottom-0 md:right-8 z-0 md:z-50 md:w-2/5" width={400} height={0} />
+            <Image src={Mockup} alt="apple" className="md:fixed md:bottom-0 md:right-8 z-0 md:z-50 md:w-2/5" width={400} />
         </div>
   );
 };
