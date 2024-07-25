@@ -1,13 +1,9 @@
-import MagicSketch from "./MagicSketch";
 import Image from "next/image";
 
-import logo from "../../../public/magic/logo.svg";
 import mockup from "../../../public/magic/mockup.png";
 
 import { Space_Grotesk } from "next/font/google";
 import CapsuleButton from "@/components/Button/CapsuleButton";
-import Link from "next/link";
-const space = Space_Grotesk({subsets: ["latin"], });
 
 export default function Magic() {
     return (

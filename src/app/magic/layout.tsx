@@ -1,11 +1,14 @@
-import MagicSketch from "./MagicSketch";
-
 import { Space_Grotesk } from "next/font/google";
 import Link from "next/link";
 import { Metadata } from "next";
 const space = Space_Grotesk({subsets: ["latin"], });
 
 import Preview from "../../../public/push/preview.png";
+import dynamic from "next/dynamic";
+
+const P5Canvas = dynamic(() => import('./P5Canvas'), {
+    ssr: false,
+})
 
 export const metadata: Metadata = {
     title: "Magic - Drawing and AI",
@@ -29,7 +32,7 @@ export const metadata: Metadata = {
 
     return (
         <div className={`w-full items-center flex flex-col ${space.className}`}>
-        <MagicSketch></MagicSketch>
+        <P5Canvas />
 
         <div className="items-start w-full p-8 fill-purple-700 bg-white bg-opacity-50 background-blur-header">
             <Link href="https://magic.joogps.com">

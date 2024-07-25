@@ -1,8 +1,10 @@
 "use client";
 
-function sketch(p) {
-    var canvas;
-    var fraction;
+import React from 'react'
+import { P5CanvasInstance, ReactP5Wrapper } from 'react-p5-wrapper'
+
+function sketch(p: P5CanvasInstance) {
+    var fraction = 0;
 
     var x = 0,
         y = 0,
@@ -19,11 +21,9 @@ function sketch(p) {
     let colors = [green, yellow, pink, purple, teal]
 
     p.setup = function() {
-        canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+        var canvas = p.createCanvas(p.windowWidth, p.windowHeight);
         canvas.position(0, 0);
         canvas.style('z-index', '-1');
-
-        fraction = 0;
 
         p.strokeWeight(10);
         p.background(255, 255, 255);
@@ -61,14 +61,14 @@ function sketch(p) {
     }
 }
 
-function hexToRgb(hex) {
+function hexToRgb(hex: string) {
     let r = parseInt(hex.substring(0, 2), 16)
     let g = parseInt(hex.substring(2, 4), 16)
     let b = parseInt(hex.substring(4, 6), 16)
     return [r, g, b]
 }
 
-function getColorFromGradient(colors, fraction) {
+function getColorFromGradient(colors: Array<Array<number>>, fraction: number) {
     fraction = fraction % 2;
     if (fraction > 1) { 
         fraction = 1 - (fraction % 1);
@@ -92,4 +92,6 @@ function getColorFromGradient(colors, fraction) {
     return interpolatedColor;
 }
 
-export default sketch;
+export default function P5Canvas() {
+    return <ReactP5Wrapper sketch={sketch} />
+}
