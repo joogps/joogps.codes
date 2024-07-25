@@ -22,7 +22,7 @@ export default function PushPage() {
             </div>
 
             <div className="flex items-start flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
-            <CapsuleButton className="capsule-button-secondary" href="https://apps.apple.com/app/apple-store/id1587610077?pt=122431166&ct=Website&mt=8">
+            <CapsuleButton className="capsule-button-secondary-dark" href="https://apps.apple.com/app/apple-store/id1587610077?pt=122431166&ct=Website&mt=8">
                 <div className="flex flex-col items-center">
                     <Image className="bg-white w-full hidden md:block" src={QRCode} alt="QR code" width={100} height={100} />
                     <p className="py-2 px-5 text-nowrap"> get the app ↓ </p>

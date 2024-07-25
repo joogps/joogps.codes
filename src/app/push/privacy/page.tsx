@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
 
     <p>if you have any questions or concerns about our use of your data, please contact us at <a href="mailto:push@joogps.com">push@joogps.com</a>.</p>
 
-    <CapsuleButton className="capsule-button-secondary my-6" href="./">
+    <CapsuleButton className="capsule-button-secondary-dark my-6" href="./">
     <p className="py-2 px-5 text-nowrap"> go back </p>
     </CapsuleButton>
     </div>

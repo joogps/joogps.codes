@@ -23,7 +23,6 @@ function sketch(p: P5CanvasInstance) {
     p.setup = function() {
         var canvas = p.createCanvas(p.windowWidth, p.windowHeight);
         canvas.position(0, 0);
-        canvas.style('z-index', '-1');
 
         p.strokeWeight(10);
         p.background(255, 255, 255);

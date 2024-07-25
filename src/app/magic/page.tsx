@@ -14,12 +14,12 @@ export default function Magic() {
 
             <div className="flex flex-row space-x-4">
                 
-            <CapsuleButton className="bg-purple-500 hover:bg-purple-700 border-none text-white" href="https://apps.apple.com/app/apple-store/id1587610077?pt=122431166&ct=Website&mt=8">
+            <CapsuleButton className="bg-purple-500 hover:bg-purple-700 border-none text-white" href="https://apps.apple.com/app/apple-store/id1581223559?pt=122431166&ct=Website&mt=8">
                 <p className="py-2 px-5 text-nowrap"> get the app ↓ </p>
             </CapsuleButton>
 
-            <CapsuleButton className="capsule-button-secondary" href="https://apps.apple.com/app/apple-store/id1587610077?pt=122431166&ct=Website&mt=8">
-                <p className="py-2 px-5 text-nowrap"> learn more </p>
+            <CapsuleButton className="capsule-button-secondary-light" href="https://apps.apple.com/app/apple-store/id1587610077?pt=122431166&ct=Website&mt=8">
+                <p className="py-2 px-5 text-nowrap text-black"> learn more </p>
             </CapsuleButton>
             </div>
             

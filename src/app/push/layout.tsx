@@ -29,10 +29,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const year = new Date().getFullYear();
+
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <main>
+      <body>
+      <main className={`text-white bg-black ${inter.className}`}>
       <MeshGradient></MeshGradient>
 
       <div className="pt-8 w-full h-svh flex flex-col">
@@ -49,7 +51,7 @@ export default function RootLayout({
               <Link href="mailto:push@joogps.com"> contact us </Link>
               </div>
 
-              <p className="opacity-50"> © 2021 João Pozzobon </p>
+              {/* <p> <span className="opacity-50">© {year}</span> <Link href="https://joogps.com" className="underline opacity-50 hover:opacity-100"> João Pozzobon</Link> </p> */}
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Magic - Drawing and AI",
     description: "Magic is the drawing app made for the Mac, and for the fun. With it you can turn your trackpad into your very own graphics tablet.",
     other: {
-      "apple-itunes-app": "app-id=1587610077",
+      "apple-itunes-app": "app-id=1581223559",
       "apple-mobile-web-app-title": "Magic",
       "apple-mobile-web-app-capable": "yes",
       "apple-mobile-web-app-status-bar-style": "white",
@@ -31,8 +31,13 @@ export const metadata: Metadata = {
     const year = new Date().getFullYear();
 
     return (
+        <html lang="en">
+        <body>
+        <main className={`text-black ${space.className}`}>
         <div className={`w-full items-center flex flex-col ${space.className}`}>
-        <P5Canvas />
+        <div className="fixed left-0 -z-10">
+            <P5Canvas/>
+        </div>
 
         <div className="items-start w-full p-8 fill-purple-700 bg-white bg-opacity-50 background-blur-header">
             <Link href="https://magic.joogps.com">
@@ -53,5 +58,8 @@ export const metadata: Metadata = {
             <p> <span className="opacity-50">© {year}</span> <Link href="https://joogps.com" className="underline opacity-50 hover:opacity-100"> João Pozzobon</Link> </p>
         </div>
         </div>
+        </main>
+        </body>
+        </html>
     );
 }
