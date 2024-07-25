@@ -3,7 +3,6 @@ import Link from 'next/link'
 import CapsuleButton from "@/components/Button/CapsuleButton";
 import { Space_Grotesk } from "next/font/google";
 
-import MeshGradient from "@/components/MeshGradient";
 import Header from "@/components/Header";
 
 const space = Space_Grotesk({subsets: ["latin"], });
@@ -11,8 +10,6 @@ const space = Space_Grotesk({subsets: ["latin"], });
 export default function Home() {
   return (
     <main>
-      <MeshGradient></MeshGradient>
-
       <div className="p-12 md:p-24 my-12 z-10 h-96 w-full flex flex-col items-start justify-between text-sm lg:flex">
         <h1 className="mb-3 text-4xl font-semibold text-white">
           my name is joão pozzobon <span className="text-white text-opacity-50">— i'm a software engineer and computer science student.</span>

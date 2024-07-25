@@ -9,10 +9,20 @@ import Logo from "../../../public/push/logo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
+import Preview from "../../../public/push/preview.png";
+
 export const metadata: Metadata = {
   title: "push-up tracker - download the push app",
   description: "count your push-ups with your iPhone camera",
-  other: {"apple-itunes-app": "app-id=1587610077"}
+  other: {
+    "apple-itunes-app": "app-id=1587610077",
+    "apple-mobile-web-app-title": "push",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black",
+    "theme-color": "#000000",
+    "og:image": Preview.src,
+    "twitter:image": Preview.src,
+  }
 };
 
 export default function RootLayout({
