@@ -15,6 +15,10 @@ export function middleware(req: NextRequest) {
       return NextResponse.rewrite(
         new URL(`/push${req.nextUrl.pathname}`, req.url),
       );
+    case subdomain?.startsWith("magic"):
+      return NextResponse.rewrite(
+        new URL(`/magic${req.nextUrl.pathname}`, req.url),
+      );
     default:
       return NextResponse.next();
   }

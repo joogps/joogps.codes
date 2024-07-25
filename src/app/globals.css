@@ -2,23 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-} */
-
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
 }
+
+/* :root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-rgb: 0, 0, 0;
   }
 }
 
@@ -28,18 +25,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb))
 }
 
 #gradient-canvas {
   position: absolute;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   --gradient-color-1: #505050; 
   --gradient-color-2: #050505; 
   --gradient-color-3: #111111;  
@@ -65,6 +57,28 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.gt-background {
+  background-image: url("/gt.png");
+  color: transparent;
+
+  display: inline-block;
+  width: 45px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.oval-background {
+  background-image: url("/Oval.png");
+  color: transparent;
+
+  display: inline-block;
+  width: 40px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .feature-highlight {
   padding: 8px 16px;
   background: rgba(255, 255, 255, 0.9);
@@ -87,4 +101,13 @@ h2 {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.background-blur-header {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.text-shadow {
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
 }

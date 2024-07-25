@@ -12,6 +12,7 @@
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-p5-wrapper": "^4.1.2",
     "whatamesh": "^0.2.0"
   },
   "devDependencies": {

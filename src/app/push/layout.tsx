@@ -36,17 +36,21 @@ export default function RootLayout({
       <MeshGradient></MeshGradient>
 
       <div className="pt-8 w-full h-svh flex flex-col">
-        <Link href="/push">
+        <Link href="push.joogps.com">
         <Image src={Logo} className="mx-8" alt="apple" height={30} />
         </Link>
 
         <div className="justify-between h-full flex flex-col items-end">
             {children}
 
-            <div className="w-full bg-neutral-950 px-12 min-h-[96px] flex flex-row items-center space-x-4 font-semibold">
-                <Link href="/push/privacy-policy"> privacy policy </Link>
-                <Link href="mailto:push@joogps.com"> contact us </Link>
-            </div>
+            <div className="w-full text-nowrap bg-neutral-950 px-12 min-h-[96px] flex font-semibold items-center justify-between">
+              <div className="flex flex-col md:flex-row md:space-x-4">
+              <Link href="/push/privacy"> privacy policy </Link>
+              <Link href="mailto:push@joogps.com"> contact us </Link>
+              </div>
+
+              <p className="opacity-50"> © 2021 João Pozzobon </p>
+          </div>
         </div>
       </div>
     </main>

@@ -11,3 +11,24 @@
     --capsule-button-border: rgba(255, 255, 255, 0.1);
     --capsule-button-text: rgba(255, 255, 255, 1.0);
 }
+
+.capsule-background-blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+@media (prefers-color-scheme: light) {
+    .capsule-button-primary {
+        --capsule-button-background: rgba(0, 0, 0, 1);
+        --capsule-button-background-highlighted: rgba(0, 0, 0, 0.9);
+        --capsule-button-border: rgba(0, 0, 0, 0.1);
+        --capsule-button-text: rgba(255, 255, 255, 0.9);
+    }
+
+    .capsule-button-secondary {
+        --capsule-button-background: rgba(0, 0, 0, 0.05);
+        --capsule-button-background-highlighted: rgba(0, 0, 0, 0.1);
+        --capsule-button-border: rgba(0, 0, 0, 0.1);
+        --capsule-button-text: rgba(0, 0, 0, 1.0);
+    }
+}
