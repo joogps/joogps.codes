@@ -45,7 +45,7 @@ export default function RootLayout({
 
             <div className="w-full bg-neutral-950 px-12 min-h-[96px] flex flex-row items-center space-x-4 font-semibold">
                 <Link href="/push/privacy-policy"> privacy policy </Link>
-                <Link href="mailto:joogps@icloud.com"> contact us </Link>
+                <Link href="mailto:push@joogps.com"> contact us </Link>
             </div>
         </div>
       </div>
