@@ -34,8 +34,8 @@ export const metadata: Metadata = {
         <html lang="en">
         <body>
         <main className={`text-black ${space.className}`}>
-        <div className={`w-full items-center flex flex-col ${space.className}`}>
-        <div className="fixed left-0 -z-10">
+        <div className={`w-full min-h-dvh justify-between items-center flex flex-col ${space.className}`}>
+        <div className="fixed left-0 bg-white">
             <P5Canvas/>
         </div>
 
@@ -47,9 +47,11 @@ export const metadata: Metadata = {
             </Link>
         </div>
         
+        <div className="z-0">
         {children}
+        </div>
         
-        <div className="w-full text-nowrap bg-purple-600 text-white px-12 min-h-[96px] flex font-semibold items-center justify-between">
+        <div className="z-50 w-full text-nowrap bg-purple-600 text-white px-12 min-h-[96px] flex font-semibold items-center justify-between">
             <div className="flex flex-col md:flex-row md:space-x-4">
             <Link href="/magic/privacy"> privacy policy </Link>
             <Link href="mailto:magic@joogps.com"> contact us </Link>

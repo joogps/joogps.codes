@@ -37,8 +37,8 @@ export default function RootLayout({
       <main className={`text-white bg-black ${inter.className}`}>
       <MeshGradient></MeshGradient>
 
-      <div className="pt-8 w-full h-svh flex flex-col">
-        <Link href="push.joogps.com">
+      <div className="pt-8 w-full min-h-dvh justify-between flex flex-col">
+        <Link href="https://push.joogps.com">
         <Image src={Logo} className="mx-8" alt="apple" height={30} />
         </Link>
 

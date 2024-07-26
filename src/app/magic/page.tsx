@@ -18,7 +18,7 @@ export default function Magic() {
                 <p className="py-2 px-5 text-nowrap"> get the app ↓ </p>
             </CapsuleButton>
 
-            <CapsuleButton className="capsule-button-secondary-light" href="https://apps.apple.com/app/apple-store/id1587610077?pt=122431166&ct=Website&mt=8">
+            <CapsuleButton className="capsule-button-secondary-light" href="https://joogps.notion.site/Magic-765b88c426a740b88b30bbeb0d067017?pvs=4">
                 <p className="py-2 px-5 text-nowrap text-black"> learn more </p>
             </CapsuleButton>
             </div>
