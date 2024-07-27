@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import MeshGradient from "@/components/MeshGradient";
@@ -38,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Analytics />
         <main className={`text-white ${inter.className}`}>
           <MeshGradient />
           <div className="fixed w-dvw h-dvh bg-black -z-20"></div>
@@ -52,7 +54,10 @@ export default function RootLayout({
 
               <div className="w-full text-nowrap bg-neutral-950 px-12 min-h-[96px] flex font-semibold items-center justify-between">
                 <div className="flex flex-col md:flex-row md:space-x-4">
-                  <Link href="/push/privacy"> privacy policy </Link>
+                  <Link href="https://push.joogps.com/privacy">
+                    {" "}
+                    privacy policy{" "}
+                  </Link>
                   <Link href="mailto:push@joogps.com"> contact us </Link>
                 </div>
 

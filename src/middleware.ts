@@ -7,6 +7,18 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
+  if (pathname.includes("/version-history")) {
+    return NextResponse.redirect(
+      "https://joogps.notion.site/Version-history-657cef63fada49b48c29819ddfe6da73?pvs=4",
+    );
+  }
+
+  if (pathname.includes("/privacy-policy")) {
+    return NextResponse.redirect(
+      new URL(`/privacy`, req.url)
+    );
+  }
+
   const hostname = req.headers.get("host");
   const subdomain = hostname?.match(/^([^.]+)\./)?.[1];
 

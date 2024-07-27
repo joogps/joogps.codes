@@ -1,6 +1,8 @@
 import { Space_Grotesk } from "next/font/google";
 import Link from "next/link";
 import { Metadata } from "next";
+import "../globals.css";
+import { Analytics } from "@vercel/analytics/react";
 const space = Space_Grotesk({ subsets: ["latin"] });
 
 import Preview from "../../../public/magic/preview.png";
@@ -39,6 +41,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Analytics />
       <body>
         <main className={`text-black ${space.className}`}>
           <div
@@ -57,9 +60,16 @@ export default function RootLayout({
 
             <div className="z-0">{children}</div>
 
-            <div className="z-50 w-full text-nowrap bg-purple-600 text-white px-12 min-h-[96px] flex font-semibold items-center justify-between">
-              <div className="flex flex-col md:flex-row md:space-x-4">
-                <Link href="/magic/privacy"> privacy policy </Link>
+            <div className="z-50 w-full text-nowrap bg-purple-600 text-white px-12 min-h-[128px] md:min-h-[96px] flex font-semibold items-center justify-between">
+              <div className="flex flex-col md:flex-row md:space-x-4 space-y-1 md:space-y-0">
+                <Link href="https://magic.joogps.com/privacy">
+                  {" "}
+                  privacy policy{" "}
+                </Link>
+                <Link href="https://magic.joogps.com/version-history">
+                  {" "}
+                  version history{" "}
+                </Link>
                 <Link href="mailto:magic@joogps.com"> contact us </Link>
               </div>
 
