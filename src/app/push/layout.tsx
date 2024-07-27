@@ -34,8 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className={`text-white bg-black ${inter.className}`}>
+        <main className={`text-white ${inter.className}`}>
           <MeshGradient></MeshGradient>
+          <div className="fixed w-dvw h-dvh bg-black -z-20"></div>
 
           <div className="pt-8 w-full min-h-dvh justify-between flex flex-col">
             <Link href="https://push.joogps.com">
