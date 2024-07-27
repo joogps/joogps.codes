@@ -40,13 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main
-          className={`text-black bg-white md:bg-transparent ${space.className}`}
-        >
+        <main className={`text-black ${space.className}`}>
           <div
             className={`w-full min-h-dvh justify-between items-center flex flex-col ${space.className}`}
           >
-            <div className="fixed left-0 bg-white hidden md:block">
+            <div className="fixed bg-white w-full h-full"></div>
+            <div className="fixed left-0 hidden md:block">
               <P5Canvas />
             </div>
 
