@@ -52,7 +52,7 @@ export default function RootLayout({
 
             <div className="items-start w-full p-8 fill-purple-700 bg-white bg-opacity-50 background-blur-header">
               <Link href="https://magic.joogps.com">
-                <MagicLogo size="40px"></MagicLogo>
+                <MagicLogo size="40px" />
               </Link>
             </div>
 

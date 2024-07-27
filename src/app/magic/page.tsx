@@ -8,8 +8,8 @@ export default function Magic() {
   return (
     <div className="flex flex-col items-center m-8 md:m-16 text-center space-y-8">
       <h3 className="font-bold text-5xl text-shadow">
-        <span className="text-purple-600">Magic</span> is the drawing app{" "}
-        <br></br>made for the Mac, and for the fun.
+        <span className="text-purple-600">Magic</span> is the drawing app <br />
+        made for the Mac, and for the fun.
       </h3>
 
       <div className="flex flex-row space-x-4">

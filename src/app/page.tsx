@@ -53,7 +53,7 @@ export default function Home() {
                 <MagicLogo
                   className="inline-block fill-purple-800 dark:fill-purple-400 mb-1"
                   size="22px"
-                ></MagicLogo>{" "}
+                />{" "}
                 <ArrowLink href="https://magic.joogps.com"> Magic</ArrowLink>
               </span>
               , an innovative drawing app for macOS

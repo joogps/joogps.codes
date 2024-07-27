@@ -39,7 +39,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className={`text-white ${inter.className}`}>
-          <MeshGradient></MeshGradient>
+          <MeshGradient />
           <div className="fixed w-dvw h-dvh bg-black -z-20"></div>
 
           <div className="pt-8 w-full min-h-dvh justify-between flex flex-col">
