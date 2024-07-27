@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import mockup from "../../../public/magic/mockup.png";
 
-import { Space_Grotesk } from "next/font/google";
 import CapsuleButton from "@/components/Button/CapsuleButton";
 
 export default function Magic() {

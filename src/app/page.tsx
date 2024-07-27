@@ -1,12 +1,8 @@
 import Image from "next/image";
-import Link from 'next/link'
-import CapsuleButton from "@/components/Button/CapsuleButton";
-
-import Header from "@/components/Header";
 import ArrowLink from "@/components/ArrowLink";
 
-import DuskLogo from "../../public/Dusk.png";
-import GTLogo from "../../public/GT.png";
+import DuskLogo from "/public/Dusk.png";
+import GTLogo from "/public/GT.png";
 
 export default function Home() {
   const year = new Date().getFullYear();
