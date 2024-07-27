@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     "apple-itunes-app": "app-id=1581223559",
     "apple-mobile-web-app-title": "Magic",
     "apple-mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-status-bar-style": "white",
-    "theme-color": "#000000",
+    "apple-mobile-web-app-status-bar-style": "#7E22CE",
+    "theme-color": "#7E22CE",
     "og:image": "https://magic.joogps.com" + Preview.src,
   },
   icons: {
