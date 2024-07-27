@@ -44,7 +44,7 @@ export default function RootLayout({
           <div
             className={`w-full min-h-dvh justify-between items-center flex flex-col ${space.className}`}
           >
-            <div className="fixed left-0 bg-white">
+            <div className="fixed left-0 bg-white hidden md:block">
               <P5Canvas />
             </div>
 
