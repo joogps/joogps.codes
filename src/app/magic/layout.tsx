@@ -1,9 +1,8 @@
-import { Space_Grotesk } from "next/font/google";
+import { spaceGrotesk } from "@/styles/fonts";
 import Link from "next/link";
 import { Metadata } from "next";
 import "../globals.css";
 import { Analytics } from "@vercel/analytics/react";
-const space = Space_Grotesk({ subsets: ["latin"] });
 
 import Preview from "../../../public/magic/preview.png";
 import Favicon from "../../../public/magic/favicon.ico";
@@ -43,9 +42,9 @@ export default function RootLayout({
     <html lang="en">
       <Analytics />
       <body>
-        <main className={`text-black ${space.className}`}>
+        <main className={`text-black ${spaceGrotesk.className}`}>
           <div
-            className={`w-full min-h-dvh justify-between items-center flex flex-col ${space.className}`}
+            className={`w-full min-h-dvh justify-between items-center flex flex-col`}
           >
             <div className="fixed bg-white w-full h-full"></div>
             <div className="fixed left-0 hidden md:block">

@@ -83,5 +83,8 @@ h2 {
 }
 
 .text-shadow {
-  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+}
+
+.space-grotesk-alternate-1 {
+  font-feature-settings: 'ss01' 1;
 }
