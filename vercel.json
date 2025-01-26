@@ -6,17 +6,6 @@
         "src": "/push/(.*)",
         "dest": "/push/$1"
         }
-    ],
-    "headers": [
-        {
-        "source": "/(.*)",
-        "headers": [
-            {
-            "key": "Cache-Control",
-            "value": "no-cache"
-            }
-        ]
-        }
     ]
 }
   
