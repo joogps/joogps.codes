@@ -1,9 +1,11 @@
 import { Analytics } from "@vercel/analytics/react";
+import Link from "next/link";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 
 import Preview from "../../../public/preview.png";
+import ArrowLink from "@/components/ArrowLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,8 +35,13 @@ export default function RootLayout({
 
               <div className="w-full h-[1px] -mx-1 rounded-full bg-current opacity-25"></div>
 
-              <div className="w-full text-nowrap px-2 flex font-semibold justify-end">
-                <p className="opacity-25 text-sm">© {year} João Pozzobon </p>
+              <div className="w-full text-nowrap px-2 flex font-semibold justify-between text-base">
+                <ArrowLink className="opacity-75" href="/resume.pdf">
+                  {" "}
+                  resume{" "}
+                </ArrowLink>
+
+                <p className="opacity-35">© {year} João Pozzobon </p>
               </div>
             </div>
           </div>
