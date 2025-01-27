@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname;
-  
+
   if (pathname.includes("/_next/") || pathname.includes("/static/")) {
     return NextResponse.next();
   }
